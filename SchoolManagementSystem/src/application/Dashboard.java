@@ -12,6 +12,9 @@ import javax.swing.ImageIcon;
 import java.awt.Font;
 import java.awt.Image;
 import javax.swing.SwingConstants;
+import javax.swing.JButton;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 
 public class Dashboard {
@@ -97,16 +100,27 @@ public class Dashboard {
 		menuPanel.add(panel);
 		panel.setLayout(null);
 		
-		JLabel lbl_Home = new JLabel("Home");
-		lbl_Home.setForeground(new Color(255, 255, 255));
-		lbl_Home.setFont(new Font("Yu Gothic Medium", Font.BOLD, 18));
-		lbl_Home.setBounds(72, 15, 103, 23);
-		panel.add(lbl_Home);
-		
 		JLabel lbl_1 = new JLabel("");
 		lbl_1.setBounds(20, 5, 40, 35);
 		lbl_1.setIcon(new ImageIcon(img_home));
 		panel.add(lbl_1);
+		
+		JButton btn_home = new JButton("Home");
+		btn_home.setForeground(new Color(255, 255, 255));
+		btn_home.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				System.out.println("Home is clicked");
+			}
+		});
+		btn_home.setFont(new Font("Tahoma", Font.BOLD, 16));
+		btn_home.setHorizontalAlignment(SwingConstants.LEADING);
+		btn_home.setBounds(66, 5, 142, 35);
+		btn_home.setOpaque(false);
+		btn_home.setContentAreaFilled(false);
+		btn_home.setBorderPainted(false);
+		btn_home.setFocusPainted(false);
+		panel.add(btn_home);
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBackground(new Color(47, 79, 79));
@@ -114,17 +128,28 @@ public class Dashboard {
 		panel_1.setBounds(10, 145, 258, 45);
 		menuPanel.add(panel_1);
 		
-		JLabel blob_Leave = new JLabel("Apply Leave");
-		blob_Leave.setForeground(new Color(255, 255, 255));
-		blob_Leave.setFont(new Font("Yu Gothic Medium", Font.BOLD, 18));
-		blob_Leave.setBounds(72, 15, 103, 23);
-		panel_1.add(blob_Leave);
-		
 		JLabel lbl_2 = new JLabel("");
 		lbl_2.setHorizontalAlignment(SwingConstants.CENTER);
 		lbl_2.setBounds(20, 5, 40, 35);
 		lbl_2.setIcon(new ImageIcon(img_leave));
 		panel_1.add(lbl_2);
+		
+		JButton btn_leave = new JButton("Apply Leave");
+		btn_leave.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				System.out.println("Leave is clicked");
+			}
+		});
+		btn_leave.setForeground(new Color(255, 255, 255));
+		btn_leave.setOpaque(false);
+		btn_leave.setHorizontalAlignment(SwingConstants.LEADING);
+		btn_leave.setFont(new Font("Tahoma", Font.BOLD, 16));
+		btn_leave.setFocusPainted(false);
+		btn_leave.setContentAreaFilled(false);
+		btn_leave.setBorderPainted(false);
+		btn_leave.setBounds(70, 5, 142, 35);
+		panel_1.add(btn_leave);
 		
 		JPanel panel_1_1 = new JPanel();
 		panel_1_1.setBackground(new Color(47, 79, 79));
@@ -132,17 +157,28 @@ public class Dashboard {
 		panel_1_1.setBounds(10, 210, 258, 45);
 		menuPanel.add(panel_1_1);
 		
-		JLabel lbl_Marks = new JLabel("Marks");
-		lbl_Marks.setForeground(new Color(255, 255, 255));
-		lbl_Marks.setFont(new Font("Yu Gothic Medium", Font.BOLD, 18));
-		lbl_Marks.setBounds(72, 15, 103, 23);
-		panel_1_1.add(lbl_Marks);
-		
 		JLabel lbl_3 = new JLabel("");
 		lbl_3.setHorizontalAlignment(SwingConstants.CENTER);
 		lbl_3.setBounds(20, 5, 40, 35);
 		lbl_3.setIcon(new ImageIcon(img_marks));
 		panel_1_1.add(lbl_3);
+		
+		JButton btn_marks = new JButton("Marks");
+		btn_marks.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				System.out.println("Marks is clicked");
+			}
+		});
+		btn_marks.setForeground(new Color(255, 255, 255));
+		btn_marks.setOpaque(false);
+		btn_marks.setHorizontalAlignment(SwingConstants.LEADING);
+		btn_marks.setFont(new Font("Tahoma", Font.BOLD, 16));
+		btn_marks.setFocusPainted(false);
+		btn_marks.setContentAreaFilled(false);
+		btn_marks.setBorderPainted(false);
+		btn_marks.setBounds(70, 5, 142, 35);
+		panel_1_1.add(btn_marks);
 		
 		JPanel panel_1_1_1 = new JPanel();
 		panel_1_1_1.setBackground(new Color(47, 79, 79));
@@ -150,17 +186,28 @@ public class Dashboard {
 		panel_1_1_1.setBounds(10, 275, 258, 45);
 		menuPanel.add(panel_1_1_1);
 		
-		JLabel lbl_Attendance = new JLabel("Attendance");
-		lbl_Attendance.setForeground(new Color(255, 255, 255));
-		lbl_Attendance.setFont(new Font("Yu Gothic Medium", Font.BOLD, 18));
-		lbl_Attendance.setBounds(72, 15, 103, 23);
-		panel_1_1_1.add(lbl_Attendance);
-		
 		JLabel lbl_4 = new JLabel("");
 		lbl_4.setHorizontalAlignment(SwingConstants.CENTER);
 		lbl_4.setBounds(20, 5, 40, 35);
 		lbl_4.setIcon(new ImageIcon(img_attendance));
 		panel_1_1_1.add(lbl_4);
+		
+		JButton btn_attendance = new JButton("Atendance");
+		btn_attendance.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) 
+			{
+				System.out.println("Attendance is clicked");
+			}
+		});
+		btn_attendance.setForeground(new Color(255, 255, 255));
+		btn_attendance.setOpaque(false);
+		btn_attendance.setHorizontalAlignment(SwingConstants.LEADING);
+		btn_attendance.setFont(new Font("Tahoma", Font.BOLD, 16));
+		btn_attendance.setFocusPainted(false);
+		btn_attendance.setContentAreaFilled(false);
+		btn_attendance.setBorderPainted(false);
+		btn_attendance.setBounds(70, 5, 142, 35);
+		panel_1_1_1.add(btn_attendance);
 		
 		JLabel lbl_back = new JLabel("");
 		lbl_back.setBounds(278, 0, 832, 255);
