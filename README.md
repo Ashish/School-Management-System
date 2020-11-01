@@ -5,7 +5,7 @@ A school Management System for school admin and students to keep record their ac
 # Technologies Used
 1. Swing
 2. Eclipse
-3. Oracle
+3. MySQL
 
 # Language Used 
 Java
