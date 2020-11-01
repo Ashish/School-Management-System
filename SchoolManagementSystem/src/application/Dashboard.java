@@ -15,6 +15,8 @@ import javax.swing.SwingConstants;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 
 public class Dashboard {
@@ -106,6 +108,18 @@ public class Dashboard {
 		panel.add(lbl_1);
 		
 		JButton btn_home = new JButton("Home");
+		btn_home.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseEntered(MouseEvent e) 
+			{
+				btn_home.setForeground((new Color(46, 139, 87)));
+			}
+			@Override
+			public void mouseExited(MouseEvent e) 
+			{
+				btn_home.setForeground(new Color(255, 255, 255));
+			}
+		});
 		btn_home.setForeground(new Color(255, 255, 255));
 		btn_home.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
@@ -135,6 +149,18 @@ public class Dashboard {
 		panel_1.add(lbl_2);
 		
 		JButton btn_leave = new JButton("Apply Leave");
+		btn_leave.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseEntered(MouseEvent e) 
+			{
+				btn_leave.setForeground((new Color(46, 139, 87)));
+			}
+			@Override
+			public void mouseExited(MouseEvent e) 
+			{
+				btn_leave.setForeground((new Color(255, 255, 255)));
+			}
+		});
 		btn_leave.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -142,7 +168,6 @@ public class Dashboard {
 			}
 		});
 		btn_leave.setForeground(new Color(255, 255, 255));
-		btn_leave.setOpaque(false);
 		btn_leave.setHorizontalAlignment(SwingConstants.LEADING);
 		btn_leave.setFont(new Font("Tahoma", Font.BOLD, 16));
 		btn_leave.setFocusPainted(false);
@@ -164,6 +189,18 @@ public class Dashboard {
 		panel_1_1.add(lbl_3);
 		
 		JButton btn_marks = new JButton("Marks");
+		btn_marks.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseEntered(MouseEvent e) 
+			{
+				btn_marks.setForeground((new Color(46, 139, 87)));
+			}
+			@Override
+			public void mouseExited(MouseEvent e) 
+			{
+				btn_marks.setForeground((new Color(255, 255, 255)));
+			}
+		});
 		btn_marks.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
@@ -193,6 +230,18 @@ public class Dashboard {
 		panel_1_1_1.add(lbl_4);
 		
 		JButton btn_attendance = new JButton("Atendance");
+		btn_attendance.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseEntered(MouseEvent e) 
+			{
+				btn_attendance.setForeground((new Color(46, 139, 87)));
+			}
+			@Override
+			public void mouseExited(MouseEvent e) 
+			{
+				btn_attendance.setForeground((new Color(255, 255, 255)));
+			}
+		});
 		btn_attendance.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) 
 			{
